@@ -20,8 +20,19 @@ def eratostenes():
       number = min(num_tab)
       to_remove=[]
   primes+=num_tab
-  print("Liczby pierwsze w danym zakresie\n {0}".format(primes))
-  print("Liczb pierwszych w tym zakresie jest {0}".format(len(primes)))
+  print("Liczby pierwsze w zakresie do {0}\n".format(n))
+  print_counter=0
+  line=""
+  for i in primes:
+
+      if print_counter<20:
+          print(i, sep=' ', end=' ', flush=True)
+      else:
+          print(i)
+          print_counter=0
+      print_counter += 1
+  print("\nZnaleziono {0} liczb pierwszych".format(len(primes)))
+
 
 
 
