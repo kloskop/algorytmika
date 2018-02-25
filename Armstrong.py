@@ -1,7 +1,7 @@
 import math
 
 def Armstrong():
-
+    how_many = 0
     for number in range(9,int(input("Zakres do: "))):
       number=str(number)
       sum=0
@@ -13,7 +13,8 @@ def Armstrong():
         sum+=math.pow(n,power)
       if sum==int(number):
         print(number)
-    print("\nKoniec obliczeń")
+        how_many+=1
+    print("Znaleziono {0} liczb Armstronga".format(how_many))
 
 Armstrong()
 
