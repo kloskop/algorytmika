@@ -10,7 +10,7 @@ def coding_encoding(text, key, switch):
        modyfier = -1
     else:
        sys.exit("Wprowadzono błędną wartość wybory kodowania/dekodowania")
-    for i in text.upper():
+    for i in text:
         text_tab+=[int(ord(i))]
     for i in str(key):
         key_tab+=[i]
