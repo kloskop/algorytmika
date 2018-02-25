@@ -1,7 +1,7 @@
 import collections
 
 def import_text():
-    file=open('PanTadeusz.txt')
+    file=open('PTadeusz.txt')
     try:
         text=file.read().lower()
         interpunction_signs=['.',',','"','!','?',':',';','-','<','>','(',')','[',']']
