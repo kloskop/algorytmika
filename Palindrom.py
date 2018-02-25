@@ -51,8 +51,8 @@ def new_number(number):
 def palindrome():
     number=input("Podaj liczbę: ")
     int_number=int(number)
-    tab=[]
-    while int_number<1000000: #szukanie w zakresie do 1000000, można zmieniać
+
+    while int_number<100000000: #szukanie w zakresie do 1000000, można zmieniać
       tab=(split_in_two(create_num_tab(number)))
       if palindrome_check(tab[0],tab[1]):
           print("Liczba {0} jest palindromem".format(number))
