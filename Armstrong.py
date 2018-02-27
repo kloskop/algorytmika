@@ -11,6 +11,8 @@ def Armstrong():
           num_tab+=[int(n)]
       for n in num_tab:
         sum+=math.pow(n,power)
+        if sum>int(number):
+            break
       if sum==int(number):
         print(number)
         how_many+=1
