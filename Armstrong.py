@@ -2,7 +2,7 @@ import math
 
 def Armstrong():
     how_many = 0
-    for number in range(9,int(input("Zakres do: "))):
+    for number in range(10,int(input("Zakres do: "))):
       number=str(number)
       sum=0
       power=len(number)
